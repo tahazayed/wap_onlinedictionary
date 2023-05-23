@@ -1,0 +1,29 @@
+{
+  "name": "wap_onlinedictionary",
+  "version": "1.0.0",
+  "description": "WAP final project",
+  "main": "dictionary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahazayed/wap_onlinedictionary.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "RestAPI"
+  ],
+  "author": "Taha Elsayed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tahazayed/wap_onlinedictionary/issues"
+  },
+  "homepage": "https://github.com/tahazayed/wap_onlinedictionary#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.2"
+  }
+}

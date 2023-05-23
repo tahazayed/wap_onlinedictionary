@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    title Online Dictionary
+
+    script(src="js/jquery-3.6.4.min.js")
+
+
+    script(src="js/dict.js")
+
+    link(rel="stylesheet" href="style/dict.css")
+
+
+  body
+    h1 WAP Online Dictionary
+    div.searchsection  
+      label.mylabel Term:
+        input#term(type="text" placeholder="Search" aria-label="Search" name="term" autofocus)
+        button#lookupBtn(type="submit") Lookup
+      center#loader
+        img(src="image/loading.gif")
+      br
+      div#card-none.card
+        div#result.card-body

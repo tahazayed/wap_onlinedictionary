@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 10pt;
+    letter-spacing: 0.5px;
+    line-height: 1.41;
+    background-color: #F5F5F5;
+}
+
+h1 {
+    background-color: #E0E0E0;
+    margin: 0;
+    padding: 0 0 0 10px;
+
+}
+
+.searchsection {
+    background-color: #E8E8E8;
+    padding: 0 0 0 10px;
+}
+
+button {
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+
+
+.mylabel {
+    font-size: 30px;
+}
+
+#term {
+    font-size: 30px;
+    width: 300px;
+    font-size: 14pt;
+}
+
+#card-none{
+    display: none;
+}
+
+#footer{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    margin-bottom:0px;
+}
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-default {
+    border-left-color: #777;
+}
+
+.bs-callout-default h4 {
+    color: #777;
+}
+
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
