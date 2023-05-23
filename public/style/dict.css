@@ -128,3 +128,9 @@ button {
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+
+#validators {
+    margin: 20px 10px 10px 0px;
+    float: right;
+    clear: right;
+}
