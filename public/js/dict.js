@@ -63,7 +63,7 @@ $(document).ready(function () {
         defs += "<h3> " + term + " </h3>";
 
         defs += "<div class='bs-callout bs-callout-danger'>";
-        defs += "Not Found";
+        defs += "<p>Word not found</p>";
         defs += "</div>";
 
         defs += "</div>";
