@@ -12,12 +12,13 @@ $(document).ready(function () {
         var term = $("#term").val();
         $.ajax({
             url: "api/word",
+            type: "GET",
             data: { 'term': term },
             dataType: "json",
-            type: "GET",
-            success: ajaxSuccess,
-            error: ajaxFailure
-        });
+            // success: ajaxSuccess,
+            // error: ajaxFailure
+        }).done(ajaxSuccess)
+        .fail(ajaxFailure);
     };
 
     $("#lookupBtn").click(function () {
