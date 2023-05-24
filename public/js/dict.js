@@ -10,15 +10,18 @@ $(document).ready(function () {
 
     function lookup() {
         var term = $("#term").val();
-        $.ajax({
-            url: "api/word",
-            type: "GET",
-            data: { 'term': term },
-            dataType: "json",
-            // success: ajaxSuccess,
-            // error: ajaxFailure
-        }).done(ajaxSuccess)
-        .fail(ajaxFailure);
+        // $.ajax({
+        //     url: "api/word",
+        //     type: "GET",
+        //     data: { 'term': term },
+        //     dataType: "json",
+        //     // success: ajaxSuccess,
+        //     // error: ajaxFailure
+        // }).done(ajaxSuccess)
+        // .fail(ajaxFailure);
+        $.get("api/word", { 'term': term })
+            .done(ajaxSuccess)
+            .fail(ajaxFailure);
     };
 
     $("#lookupBtn").click(function () {
@@ -33,7 +36,7 @@ $(document).ready(function () {
 
     function ajaxSuccess(data) {
         var callout_color = ["success", "default", "primary", "danger", "warning", "info"];
-        console.log(data);
+
         var term = $("#term").val();
         var defs = "<div id='result' class='card-body'>";
         defs += "<h3> " + term + " </h3>";
@@ -57,8 +60,6 @@ $(document).ready(function () {
         $("#card-none").css("display", "block");
     }
     function ajaxFailure(xhr, status, exception) {
-        console.log(xhr, status, exception);
-
         var term = $("#term").val();
         var defs = "<div id='result' class='card-body'>";
         defs += "<h3> " + term + " </h3>";
@@ -68,7 +69,6 @@ $(document).ready(function () {
         defs += "</div>";
 
         defs += "</div>";
-        console.log(defs);
         $("#loader").hide();
         $("#result").replaceWith(defs);
         $("#card-none").css("display", "block");
